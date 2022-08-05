@@ -1,7 +1,9 @@
+import csv
+
 from STOUT import translate_forward, translate_reverse
 
 
-
+outputs = []
 def SMILES_TR():
 # SMILES to IUPAC name translation
 
@@ -10,6 +12,12 @@ def SMILES_TR():
     IUPAC_name = translate_forward(SMILES)
     print("IUPAC name of "+SMILES+" is: "+IUPAC_name)
     print("Completed")
+    outputs.append(smiles_translate)
+    print("Write to text file? \nYes(1) \n No(2)")
+    file_c = input()
+    if file_c == '1':
+        with open('translations.txt', 'w') as f:
+            f.write(', '.join(outputs))
     print("Translate another?: \n SMILES -> IUPAC (2) \n IUPAC -> SMILES (2) \n Exit (3)")
     cont = input()
     if cont == '1':
@@ -26,6 +34,13 @@ def IUPAC_TR():
     IUPAC = input()
     smiles_translate = translate_reverse(IUPAC)
     print("SMILES of "+IUPAC+" is: " + smiles_translate)
+    print("Completed")
+    outputs.append(smiles_translate)
+    print("Write to text file? \nYes(1) \n No(2)")
+    file_c = input()
+    if file_c == '1':
+        with open('translations.txt', 'w') as f:
+            f.write(', '.join(outputs))
     print("Translate another?: \n IUPAC -> SMILES (1) \n SMILES -> IUPAC (2) \n Exit (3)")
     cont = input()
     if cont == '1':
