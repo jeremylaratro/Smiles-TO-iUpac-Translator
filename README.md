@@ -2,10 +2,14 @@ Fork -
 A simple command line interface with navigation options and text-file output was created to increase efficiency via simple terminal usage. To use the simple CLI, simply download the repository and open the terminal (within the folder, or navigate to it), then run:
 
 $ pip install tensorflow pystow rdkit
+and/or 
+$ pip install -r Python_requirements.txt
 
-to install requirements if they are not installed, and then: 
+and then: 
 
 $ python3 Simple_Cli.py
+or
+$ python Simple_Cli.py
 
 Simply follow the prompts; if text file output was selected, the text file will be created within the main project folder. The script will output all translations, separated by comma, and with a space. You can easily edit the output to suit your needs or parse the list with simple scripts. 
 
