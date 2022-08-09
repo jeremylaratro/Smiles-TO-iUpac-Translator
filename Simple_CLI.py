@@ -12,7 +12,7 @@ def SMILES_TR():
     IUPAC_name = translate_forward(SMILES)
     print("IUPAC name of "+SMILES+" is: "+IUPAC_name)
     print("Completed")
-    outputs.append(smiles_translate)
+    outputs.append(IUPAC_name)
     print("Write to text file? \nYes(1) \n No(2)")
     file_c = input()
     if file_c == '1':
