@@ -1,3 +1,18 @@
+Fork - 
+A simple command line interface with navigation options and text-file output was created to increase efficiency via simple terminal usage. To use the simple CLI, simply download the repository and open the terminal (within the folder, or navigate to it), then run:
+
+$ pip install tensorflow pystow rdkit
+and/or 
+$ pip install -r Python_requirements.txt
+
+and then: 
+
+$ python3 Simple_Cli.py
+or
+$ python Simple_Cli.py
+
+Simply follow the prompts; if text file output was selected, the text file will be created within the main project folder. The script will output all translations, separated by comma, and with a space. You can easily edit the output to suit your needs or parse the list with simple scripts. 
+
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](https://opensource.org/licenses/MIt)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://github.com/Kohulan/Smiles-TO-iUpac-Translator/graphs/commit-activity)
 ![Workflow](https://github.com/Kohulan/Smiles-TO-iUpac-Translator/actions/workflows/ci_pytest.yml/badge.svg)
