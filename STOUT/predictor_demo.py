@@ -3,9 +3,7 @@ from stout import translate_forward, translate_reverse
 
 # STOUT - IUPAC name to SMILES example
 
-file_iupac = open(
-    "IUPAC_names_test.txt", "r"
-)  # file is available in the Github repository
+file_iupac = open("IUPAC_names_test.txt", "r")  # file is available in the Github repository
 file_out = open("SMILES_predictions", "w")
 
 start = time.time()

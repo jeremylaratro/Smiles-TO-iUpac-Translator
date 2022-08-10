@@ -1,12 +1,15 @@
 # Initializing and importing necessary libararies
-
+import repack
 import tensorflow as tf
 from rdkit import Chem
 import os
 import pickle
 import pystow
 import re
-from .repack import helper
+import repack
+
+from STOUT.repack import helper
+
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 
