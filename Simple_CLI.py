@@ -3,6 +3,10 @@ import time
 from STOUT import translate_forward, translate_reverse
 
 
+# Simple_CLI is a simple command line interface for the great work done by the creators of the  Smiles-TO-iUpac-Translator (STOUT) and allows users a simple,
+# interactive interface when needing to translate SMILES strings or IUPAC names. 
+
+
 outputs = []
 
 # add_output adds the output of each translation to a list
@@ -67,7 +71,8 @@ def IUPAC_TR():
     add_output(smiles_translate)
     add_file()
     restart()
-
+    
+#Allows user to input text file
 def file_out():
     print("Please enter path to file:")
     file_path = input()
@@ -91,6 +96,7 @@ def file_out():
     print("File written to " + file_path.strip('.txt') + "_translated.txt")
     file_in.close()
     file_out_.close()
+    
 # start prompts user to choose between SMILES to IUPAC or IUPAC to SMILES translation
 def start():
     print("Input method:\n(1) Manual (CLI) \n(2) File")
